@@ -5,21 +5,21 @@
 class CrushExtended < Formula
   desc "Unofficial Crush build with community plugins (otlp, agent-status, periodic-prompts)"
   homepage "https://github.com/aleksclark/crush-modules"
-  version "2026.02.02.1"
+  version "2026.02.03.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.02.02.1/crush-extended_2026.02.02.1_darwin_x86_64.tar.gz"
-      sha256 "9d97a6754343d4a1cbd52e54ca27645770d055066aedf80fbe25a6aeb12c1632"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.02.03.2/crush-extended_2026.02.03.2_darwin_x86_64.tar.gz"
+      sha256 "3ca4bd2b57eab4abe2c75ee0ba579e6dbd8d1b8488002eea716b7ef2954841dc"
 
       def install
         bin.install "crush"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.02.02.1/crush-extended_2026.02.02.1_darwin_arm64.tar.gz"
-      sha256 "c9650502ec4b4a926d3470fc38745ab0f7a54a7f8e1fb7ddd7faf31c88a923b1"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.02.03.2/crush-extended_2026.02.03.2_darwin_arm64.tar.gz"
+      sha256 "b095dd182bbf18b2d09bffdee991eabf23bf686d43d4817a6068fae2396de50f"
 
       def install
         bin.install "crush"
@@ -29,15 +29,15 @@ class CrushExtended < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.02.02.1/crush-extended_2026.02.02.1_linux_x86_64.tar.gz"
-      sha256 "b1b9b189f8fbbc0c3f6821963669cdb1b5f1f262db5e33681c8d0129d9ae74ce"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.02.03.2/crush-extended_2026.02.03.2_linux_x86_64.tar.gz"
+      sha256 "a7f7b047b25d692bf51372c7d6e4bd311e26be6c9b02783689783c7c8e30bbba"
       def install
         bin.install "crush"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.02.02.1/crush-extended_2026.02.02.1_linux_arm64.tar.gz"
-      sha256 "e20735b3d84d944f09e31eb4068bcb8b3d6c5f821677283f6546da0c6d2f3b6f"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.02.03.2/crush-extended_2026.02.03.2_linux_arm64.tar.gz"
+      sha256 "8c85c637b135d9a8e20e5dbd41c9faa718d77c5f1ca39d9188836d2c86e3401e"
       def install
         bin.install "crush"
       end
