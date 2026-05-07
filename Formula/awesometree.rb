@@ -24,9 +24,11 @@ class Awesometree < Formula
     bin.install "awesometree-daemon"
 
     if OS.mac?
-      (prefix/"com.awesometree.daemon.plist").install "com.awesometree.daemon.plist"
+      inreplace "com.awesometree.daemon.plist", "__PREFIX__", HOMEBREW_PREFIX.to_s
+      prefix.install "com.awesometree.daemon.plist"
     else
-      (prefix/"awesometree-daemon.service").install "awesometree-daemon.service"
+      inreplace "awesometree-daemon.service", "__PREFIX__", HOMEBREW_PREFIX.to_s
+      prefix.install "awesometree-daemon.service"
     end
   end
 
