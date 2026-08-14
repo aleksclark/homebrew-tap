@@ -5,21 +5,21 @@
 class CrushExtended < Formula
   desc "Unofficial Crush build with community plugins (acp, kuri, otlp, agent-status, periodic-prompts, subagents, tempotown, tavily)"
   homepage "https://github.com/aleksclark/crush-modules"
-  version "2026.08.14.1"
+  version "2026.08.14.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.14.1/crush-extended_2026.08.14.1_darwin_x86_64.tar.gz"
-      sha256 "d3b39543bab1d377ae98d6f4e9cbf14ac83692bc175dab107ad977d3b8e5ad54"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.14.2/crush-extended_2026.08.14.2_darwin_x86_64.tar.gz"
+      sha256 "f87d8d9648907ead998ba04558b7e11c14ba0eefd7004edffb18432013f9b680"
 
       define_method(:install) do
         bin.install "crush"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.14.1/crush-extended_2026.08.14.1_darwin_arm64.tar.gz"
-      sha256 "bdce95a8f7e436ee4a8f72d00d5d87947e80189bdf9c18db9849034326af9c54"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.14.2/crush-extended_2026.08.14.2_darwin_arm64.tar.gz"
+      sha256 "c7b18b560959ec37bfe153e006a69a7f019e2763be50d2c771fe62bb5dae9950"
 
       define_method(:install) do
         bin.install "crush"
@@ -29,15 +29,15 @@ class CrushExtended < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.14.1/crush-extended_2026.08.14.1_linux_x86_64.tar.gz"
-      sha256 "0124df36406bc7c6ff177dcb15d38464cc8d22dca453c8e0f70c92be66bb3295"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.14.2/crush-extended_2026.08.14.2_linux_x86_64.tar.gz"
+      sha256 "65576b9deee5e9d76a892bc76fcade5235c30342413b20d089903ba42dd0ba0c"
       define_method(:install) do
         bin.install "crush"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.14.1/crush-extended_2026.08.14.1_linux_arm64.tar.gz"
-      sha256 "30091e427867a1ec517d52fb14d8249e7183c84deef087d3e2da0a75f446b66a"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.14.2/crush-extended_2026.08.14.2_linux_arm64.tar.gz"
+      sha256 "70885c55708220095b30dedd5da0e5b1f306c64a795ed90b685025b487ef69e8"
       define_method(:install) do
         bin.install "crush"
       end
