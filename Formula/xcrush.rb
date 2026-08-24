@@ -5,21 +5,21 @@
 class Xcrush < Formula
   desc "Unofficial build tool for creating custom Crush distributions with plugins"
   homepage "https://github.com/aleksclark/crush-modules"
-  version "2026.08.23.3"
+  version "2026.08.24.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.23.3/xcrush_2026.08.23.3_darwin_x86_64.tar.gz"
-      sha256 "92534433f0c797758cb4c8be103bec7e9f9e0dd7fe42a9b44cc4ad2305fb6c46"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.24.1/xcrush_2026.08.24.1_darwin_x86_64.tar.gz"
+      sha256 "d10db2f838e848fb7d4d929482ce5f8a1d85c1a3e843a9b1130b0585936c5211"
 
       define_method(:install) do
         bin.install "xcrush"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.23.3/xcrush_2026.08.23.3_darwin_arm64.tar.gz"
-      sha256 "7fa44bc5f2d558ab330cd4d1c621a6599abfd26c9bd6942a00fe0e06b40064d5"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.24.1/xcrush_2026.08.24.1_darwin_arm64.tar.gz"
+      sha256 "a9a4f20b1966ebe26eca9df4c3c11869ea613f17fd07dcda7b3071887b91690e"
 
       define_method(:install) do
         bin.install "xcrush"
@@ -29,15 +29,15 @@ class Xcrush < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.23.3/xcrush_2026.08.23.3_linux_x86_64.tar.gz"
-      sha256 "2d911088e915379da88679d074a6fc024da2ca1b0eede9b0bc9dd3ca8081826c"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.24.1/xcrush_2026.08.24.1_linux_x86_64.tar.gz"
+      sha256 "f8dbe44fb3ddf363154caec899b2a688808b3b8ff5fe8b67921e053b92f03224"
       define_method(:install) do
         bin.install "xcrush"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.23.3/xcrush_2026.08.23.3_linux_arm64.tar.gz"
-      sha256 "117dbf4c6b6ba98fcaff14e6f06fa7ca61a3c40110f3379acd146da06f50d257"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.08.24.1/xcrush_2026.08.24.1_linux_arm64.tar.gz"
+      sha256 "63ccefeec130ee2c9377ee256b64dc8793f40b1b4ca997bd391375f9ea27f7c8"
       define_method(:install) do
         bin.install "xcrush"
       end
