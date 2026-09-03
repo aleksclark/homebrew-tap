@@ -5,21 +5,21 @@
 class CrushA2a < Formula
   desc "Unofficial Crush build with the A2A v1.0 protocol plugin (a2a, kuri, otlp, agent-status, periodic-prompts, subagents, tempotown, tavily)"
   homepage "https://github.com/aleksclark/crush-modules"
-  version "2026.09.02.1"
+  version "2026.09.03.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.09.02.1/crush-a2a_2026.09.02.1_darwin_x86_64.tar.gz"
-      sha256 "e65380eb77f593de3f7602a7d0dc22a767425803c9c52c0b0c41382842aae52d"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.09.03.1/crush-a2a_2026.09.03.1_darwin_x86_64.tar.gz"
+      sha256 "dab724388f16854930a51fe8219de99437b27e1edee6c9fbf5946decfa15ce0c"
 
       define_method(:install) do
         bin.install "crush-a2a"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.09.02.1/crush-a2a_2026.09.02.1_darwin_arm64.tar.gz"
-      sha256 "3b829aff95212fb8a588a85b0277e522b2644830c99cd71f618abf96009d86b4"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.09.03.1/crush-a2a_2026.09.03.1_darwin_arm64.tar.gz"
+      sha256 "d5171bbb87b6de54443ddc125bea1495da3a147d9eb8e70d59a1171928072ada"
 
       define_method(:install) do
         bin.install "crush-a2a"
@@ -29,15 +29,15 @@ class CrushA2a < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.09.02.1/crush-a2a_2026.09.02.1_linux_x86_64.tar.gz"
-      sha256 "079c613d783b5d3e275f6d99b2a21195469c0cb07de2241442e82e1ce05e7aa7"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.09.03.1/crush-a2a_2026.09.03.1_linux_x86_64.tar.gz"
+      sha256 "5598b1d0b650e53c4efda4e31cb05811d818992d619570f3a2a53f93a8d27eb2"
       define_method(:install) do
         bin.install "crush-a2a"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksclark/crush-modules/releases/download/2026.09.02.1/crush-a2a_2026.09.02.1_linux_arm64.tar.gz"
-      sha256 "316b9b9930addc7b7536e67a59044ad7a6485f42d9391e1b5861f7e470f3e447"
+      url "https://github.com/aleksclark/crush-modules/releases/download/2026.09.03.1/crush-a2a_2026.09.03.1_linux_arm64.tar.gz"
+      sha256 "4dc529465575806e12877c960f57c6a72c26efae42866d6f95d35020f38783e2"
       define_method(:install) do
         bin.install "crush-a2a"
       end
